@@ -1,0 +1,29 @@
+
+
+/* a:visited{
+    color:firebrick;
+/* } */ */
+/* a:active{ */
+    color:rgb(245, 66, 21);
+ */
+input:focus{
+    color:rgb(34, 33, 33);
+    background-color: yellow;
+    width:150px;
+    height:130px;
+}
+[type=checkbox]:checked{
+    height:20px;
+    accent-color:red
+}
+.search{
+background-color: brown;
+color: white;
+border-radius: 20px;
+}
+.search:hover{ 
+    background-color: rgb(225, 13, 13);
+    color: white;
+    border-radius: 20px;
+    cursor:pointer
+    }

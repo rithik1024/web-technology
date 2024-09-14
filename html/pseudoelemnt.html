@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/demo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+      div>p{
+        background-color:rgb(20, 9, 9);
+        color:darkblue
+       }  
+      p{
+    
+        height:50px;
+        align-items:center;
+        justify-content: center;
+      }
+      div+p+p{
+        background-color: rgb(103, 144, 105);
+      }
+      div~p{
+        background-color: rgb(129, 62, 62);
+      }
+      p::first-line{
+        color: rgb(255, 255, 255);
+      }
+      p::before{
+        content:"🙌";
+      }p::selection{
+        color:red;
+      }
+      *{
+        color:white;
+      }
+    </style>
+</head>
+<body>
+<div>
+  <p >
+  Ab De Villers</p>
+  <p>Virat</p>
+  <p>Alistar cook</p>
+  <span>
+    <p>watson</p>
+    <p>warner</p>
+  </span>
+  <span>
+    <p> James Faulkner</p>
+    <p>ben stokes</p>
+  </span>
+</div>
+<p>lords England</p>
+<p>lords England</p>
+<p>lords England</p>
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li>java</li>
+
+</ul>
+
+
+</body>
+</html>

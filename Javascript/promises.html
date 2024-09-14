@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks=90
+        let mypromise=new Promise((resolve,reject) =>
+        {
+            if (marks>90){
+                resolve("You will get a bike ")
+
+            }else{
+                reject("You will not get a bike")
+            }
+        })
+
+        mypromise
+        .then((resolve)=>{
+            console.log(resolve)
+
+        })
+        .catch((reject)=>{
+        console.log(reject)
+        })
+        .finally(()=>{
+        console.log("I am finally block i will execute all the time ")})
+  //promises are asynchronous  so this statement will  get executed first  dont wait the promises to execute
+   console.log("hi rithik")
+
+   //network available =yes
+   let network="yes"
+   let newpromise=new Promise((resolve,reject)=>
+   {
+        if (network=="yes"){
+    resolve("you are connected to the internet")
+                           }
+        else{
+            reject("Network Error")
+        }
+   })
+   newpromise
+   .then((resolve)=>
+   {
+    console.log(resolve)
+   })
+   .catch((reject)=>
+    {
+     console.log(reject)
+    })
+    .finally(()=>
+    console.log("i am  finally block and i am executing all the time "))
+
+    //async and await
+
+    async function add()
+    {
+       try{ 
+          
+        let r=await mypromise
+        console.log(r)  
+    }
+    catch(error){
+        console.log(error)
+    }
+    }
+    add()
+
+    </script>
+</body>
+</html>

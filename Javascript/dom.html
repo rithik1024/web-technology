@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="main">
+    <h1 id="demo">hello</h1>
+    <p >world</p>
+    <p>there</p>
+    <p>......................................................................... ..</p>
+    <div>HELLO</div>
+    <h2>hi</h2>
+    <div class="samp">guru</div>
+  </div>
+    <script>
+
+      let x=document.getElementById("demo")
+      // it returns  the element with specific ID
+      console.log(x)
+
+      let y =document.getElementsByClassName("samp")
+      //it returns html collection
+      console.log(y)
+    
+      let v=document.getElementsByTagName('p')
+      //it also returns html collection
+      console.log(v)
+
+      let  h=document.querySelector("p")
+      //returns first html element
+      console.log(h)
+
+      let f=document.querySelectorAll("p")
+      //  it return node list
+      console.log(f)
+      
+    //............................doc properties..................................
+    console.log(document.head)
+    console.log(document.body)
+    console.log(document.title)
+
+    //how to create an element
+
+    let k=document.createElement("h3")
+    k.innerText="Heyy there, im h3 tag"
+    console.log(k)
+
+  //addition of that element onto a particular parent
+  let q=document.getElementById('main')
+  q.append(k)
+  console.log(q)
+
+  console.log(q.innerText)  // give only the contents
+  console.log(q.innerHTML)  // give both elements and contents
+
+  //remove an element 
+  let last=document.getElemetById("div")
+  div.remove()
+    
+    </script>
+</body>
+
+
+
+
+
+

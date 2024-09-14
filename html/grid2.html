@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .main{
+    
+    color: white;
+    display:grid;
+    border:2px solid;
+    grid-template-rows: 100px 100px  100px 100px; 
+    grid-template-columns: 200px 200px  ;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    /*justify-content: center; 
+    align-content:center;*/
+
+
+  }
+
+  .class2
+  {
+    background-color: red;   
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .class3{
+
+    background-color: rgb(0, 0, 0);
+  }.class4{
+    background-color: rgb(20, 173, 111);
+   }
+    .class5{
+      background-color: rgb(52, 91, 208);
+    }
+      .class6{
+        background-color: rgb(212, 184, 3);
+      }
+        .class7{
+          background-color: rgb(231, 0, 62);
+         }
+
+</style>
+<body>
+    <div class="main">
+    <div class="class2"> child1</div>
+    <div class="class3">child2</div>
+    <div class="class4">child3</div>
+    <div class="class5">child</div>
+    <div class="class6">child3</div>
+    <div class="class7">child5</div>
+    </div>
+</body>
+</html>

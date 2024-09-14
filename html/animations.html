@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple CSS Animations</title>
+    <style>
+        .container {
+            
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-direction: row;
+            height: 500px;
+            align-items: center;
+            margin-right: 30px;
+            padding-left: 30px;
+        }
+*{
+    background-color:aquamarine;
+}
+        .rotate-box, .fade-box, .bounce-box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .rotate-box {
+            background-color: red;
+            animation: rotate 4s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .fade-box {
+            background-color: purple;
+            animation: fade 3s ease-in-out infinite;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .bounce-box {
+            background-color: orange;
+            position: relative;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                top: 0;
+            }
+            50% {
+                top: -50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rotate-box"></div>
+        <div class="fade-box"></div>
+        <div class="bounce-box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        
+        p {
+            color: blue;
+        }
+        .class-selector {
+            font-weight: bold;
+        }
+        #id-selector {
+            text-decoration: underline;
+        }
+        h1, h2 {
+            background-color: lightgray;
+        }
+        h2 + p {
+           font-style: italic;
+        }
+
+        div > p {
+            color: green;
+        }
+        div p {
+            background-color: lightblue;
+        }
+        div + p {
+            background-color: yellow;
+        }
+        div ~ p {
+            background-color: rgb(108, 207, 237);
+        }
+
+        
+        p::first-line {
+            font-size: larger;
+            color: red;
+        }
+        p::first-letter {
+            font-size: 2em;
+            color: purple;
+        }
+        p::before {
+            content: "Name: ";
+            color: brown;
+        }
+        p::after {
+            content: "";
+            color: brown;
+        }
+        h1::selection {
+            background: yellow;
+            color: black;
+        }
+        p::selection {
+            background: orange;
+            color: white;
+        }
+
+       
+        a:link {
+            color: green;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: orange;
+        }
+        input:focus {
+            background-color: lightyellow;
+        }
+        button:disabled {
+            color: gray;
+        }
+
+    
+        div:first-child {
+            background-color: lightgreen;
+        }
+        div:last-child {
+            background-color: lightcoral;
+        }
+        div:nth-child(2) {
+            background-color: lightblue;
+        }
+        div:nth-of-type(2) {
+            background-color: lightpink;
+        }
+        div:nth-last-child(2) {
+            background-color: lightgray;
+        }
+
+    
+        [type="text"] {
+            background-color: lightyellow;
+        }
+        [type="submit"] {
+            background-color: lightgreen;
+        }
+        [type^="te"] {
+            border: 1px solid black;
+        }
+        [type$="mit"] {
+            border: 2px dashed blue;
+        }
+        [type*="sub"] {
+            color: red;
+        }
+        [type~="text"] {
+            font-weight: bold;
+        }
+        [type|="text"] {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Simple Selectors -->
+    <h1>Simple Selectors</h1>
+    <p>Damodar</p>
+    <p class="class-selector">Suma</p>
+    <p id="id-selector">Reshma</p>
+
+    <!-- Combinational Selectors -->
+    <h1>Combinational Selectors</h1>
+    <div>
+        <p>Rithik</p>
+    </div>
+    <p>Akhil</p>
+    <div>Irshik</div>
+    <p>Varun</p>
+
+    <!-- Pseudo-elements -->
+    <h1>Pseudo-elements</h1>
+    <p>Rema</p><p>Rohini </p><p> Ammar</p>
+
+    <!-- Pseudo-class (dynamic) -->
+    <h1>Pseudo-class (Dynamic)</h1>
+    <a href="https://www.hotstar.com/in">Hotstar</a>
+    <input type="text" placeholder="Focus on me" />
+    <button disabled>search</button>
+
+    <!-- Pseudo-class (structural) -->
+    <h1>Pseudo-class (Structural)</h1>
+    <div>
+    <div>Aparna</div>
+    <div>Bharath</div>
+    <div>Aravind</div>
+  </div>
+    <!-- Attribute Selectors -->
+    <h1>Attribute Selectors</h1>
+    <input type="text" placeholder="Rohan" />
+    <input type="submit" value="Anu" />
+    <p class="new">Hovering</p>
+</body>
+</html>

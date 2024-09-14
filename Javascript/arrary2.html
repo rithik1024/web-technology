@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let z=["raja","raju","manu","anu","nu"]
+        let x=[23,45,6,67,...z,4]
+        let arr=[...z,"jack shepeard","john locke","kate augestine","Julia","charolet","clarie","richard alpert","john","Anna lucia"]  
+        console.log(x)
+        console.log(z)
+        console.log(arr)
+        for (i=0;i<15;i++)
+           {
+             console.log(arr[i]) 
+           }
+
+           let obj={
+            occupation:"engineer",
+            salary:10000,
+            city:"kochi"
+           }
+let obj2={
+    name:"rithik",
+    ...obj,
+    place :"varkala"
+
+}
+           console.log(obj.city)
+           console.log(obj2)      
+        </script>
+</body>
+</html> 
